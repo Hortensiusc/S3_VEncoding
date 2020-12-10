@@ -15,22 +15,22 @@ while True:
     option = int(input())
 
     if option == 1:
-        video = 'BBB720p.mp4'
+        video_input = 'BBB720p.mp4'
         break
     elif option == 2:
-        video = 'BBB480p.mp4'
+        video_input = 'BBB480p.mp4'
         break
     elif option == 3:
-        video = 'BBB360x240.mp4'
+        video_input = 'BBB360x240.mp4'
         break
     elif option == 4:
-        video = 'BBB160x120.mp4'
+        video_input = 'BBB160x120.mp4'
         break
     else:
         print('Invalid option')
 
 
-video = Seminar3(video)
+video = Seminar3(video_input)
 
 video.convert_vp8()
 video.convert_vp9()
