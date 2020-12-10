@@ -26,5 +26,6 @@ class Seminar3:
         subprocess.call(cmd, shell=True)
 
     def mosaico(self):
-        cmd = 'ffmpeg -i codecvp8.webm -i codecvp9.mp4 -i  codech265.mp4 -i codecav1.mp4 -filter_complex '
+        cmd = 'ffmpeg -i codecvp8.webm -i codecvp9.mp4 -i  codech265.mp4 -i codecav1.mp4 -filter_complex ' \
+              '"xstack=inputs=4:layout=0_0|0_h0|w0_0|w0_h0" mosaico.mp4'
         subprocess.call(cmd, shell=True)
