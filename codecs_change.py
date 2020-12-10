@@ -32,10 +32,10 @@ while True:
 
 video = Seminar3(video)
 
-#video.convert_vp8()
-#video.convert_vp9()
-#video.convert_h265()
-#video.convert_av1()
+video.convert_vp8()
+video.convert_vp9()
+video.convert_h265()
+video.convert_av1()
 
 video.mosaico()
 
