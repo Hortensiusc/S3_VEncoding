@@ -1,6 +1,6 @@
 # Carlos Hortensius U150010
 
-# Practice 2  Video Encoding
+# Seminar 3  Video Encoding
 
 import os
 from class_definition import *
@@ -13,6 +13,9 @@ os.chdir(path)
 
 print('Introduce the name of your video:')
 video_to_stream = input()
+
+# I tried to have the two commands executed at the same time in two different terminals,
+# but I did not succeed
 
 video = Seminar3(video_to_stream)
 video.streaming()

@@ -31,9 +31,9 @@ class Seminar3:
         subprocess.call(cmd, shell=True)
 
     def streaming(self):
-        #cmd = 'ffmpeg -i %s -v 0 -vcodec mpeg4 -f mpegts udp://127.0.0.1:23000 & ' \
-        #      'ffplay udp://127.0.0.1:23000' %self.video
+
         subprocess.call(['ffmpeg', '-i',  self.video,  '-v', '0', '-vcodec', 'mpeg4', '-f' ,'mpegts',
                          'udp://127.0.0.1:23000 '], shell=True) \
         and subprocess.call(['ffplay', 'udp://127.0.0.1:23000'], shell=True)
-        # Tengo que intentar que se ejecuten los dos comandos a la vez en dos terminales diferentes
+        # I tried to have the two commands executed at the same time in two different terminals,
+        # but I did not succeed
